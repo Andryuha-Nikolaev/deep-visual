@@ -13,8 +13,6 @@ type CustomScrollLayoutProps = {
 }
 
 export const CustomScrollLayout = ({ children, className, style }: CustomScrollLayoutProps) => {
-  console.log("aa")
-
   return (
     <SimpleBar
       autoHide={false}
