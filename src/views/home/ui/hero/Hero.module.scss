@@ -1,1 +1,62 @@
 @use "$styles/functions/convert";
+@use "$styles/mixins/breakpoints";
+@use "$styles/mixins/mixins";
+@use "$styles/mixins/typography";
+
+.block {
+  background-image: url(./images/bg-mobile.webp);
+  background-size: cover;
+  background-position: center;
+
+  @include breakpoints.md {
+    background-image: url(./images/bg-tablet.webp);
+  }
+
+  @include breakpoints.xxl {
+    background-image: url(./images/bg-desktop.webp);
+  }
+}
+
+.wrap {
+  min-height: calc(100vh - convert.to-rem(var(--header-height-number)));
+  min-height: calc(100svh - convert.to-rem(var(--header-height-number)));
+  padding: convert.to-rem(120) 0;
+
+  background-color: rgba(0, 0, 0, 0.6);
+
+  @include mixins.flex-center;
+
+  @include breakpoints.lg {
+    // min-height: unset;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: convert.to-rem(30);
+
+  text-align: center;
+
+  @include breakpoints.lg {
+    gap: convert.to-rem(50);
+  }
+}
+
+.title {
+  span {
+    display: none;
+  }
+}
+
+.subtitle {
+  margin: 0 auto;
+  max-width: convert.to-rem(430);
+  text-wrap: balance;
+
+  @include typography.h4;
+
+  @include breakpoints.lg {
+    max-width: convert.to-rem(650);
+  }
+}

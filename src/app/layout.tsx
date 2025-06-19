@@ -3,7 +3,7 @@ import "./styles/index.scss"
 import type { Metadata, Viewport } from "next"
 import NextTopLoader from "nextjs-toploader"
 
-import { primaryFont } from "./fonts"
+import { primaryFont, secondaryFont } from "./fonts"
 import { Providers } from "./providers"
 
 import "simplebar-react/dist/simplebar.min.css"
@@ -18,6 +18,7 @@ import { Analytics } from "$widgets/analytics"
 import { Burger } from "$widgets/burger"
 import { Footer } from "$widgets/footer"
 import { Header } from "$widgets/header"
+import clsx from "clsx"
 
 export const metadata: Metadata = metaConstants
 
@@ -25,13 +26,13 @@ export const viewport: Viewport = viewportConstants
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ru" suppressHydrationWarning={siteConstants.IS_TELEGRAM_WEB_APP}>
+    <html lang="ru" className="dark" suppressHydrationWarning={siteConstants.IS_TELEGRAM_WEB_APP}>
       {siteConstants.IS_TELEGRAM_WEB_APP && (
         <head>
           <Script src="https://telegram.org/js/telegram-web-app.js" strategy="beforeInteractive" />
         </head>
       )}
-      <body className={primaryFont.variable}>
+      <body className={clsx(primaryFont.variable, secondaryFont.variable)}>
         <NextTopLoader color={siteConstants.PROGRESS_BAR_COLOR} showSpinner={false} />
         <Providers>
           <PageLayout>
