@@ -1,27 +1,27 @@
-import './styles/index.scss';
+import "./styles/index.scss"
 
-import type { Metadata, Viewport } from 'next';
-import NextTopLoader from 'nextjs-toploader';
+import type { Metadata, Viewport } from "next"
+import NextTopLoader from "nextjs-toploader"
 
-import { primaryFont } from './fonts';
-import { Providers } from './providers';
+import { primaryFont } from "./fonts"
+import { Providers } from "./providers"
 
-import 'simplebar-react/dist/simplebar.min.css';
+import "simplebar-react/dist/simplebar.min.css"
 
-import Script from 'next/script';
+import Script from "next/script"
 
-import metaConstants from '$shared/constants/meta';
-import siteConstants from '$shared/constants/site';
-import viewportConstants from '$shared/constants/viewport';
-import { PageLayout } from '$shared/layouts/page';
-import { Analytics } from '$widgets/analytics';
-import { Burger } from '$widgets/burger';
-import { Footer } from '$widgets/footer';
-import { Header } from '$widgets/header';
+import metaConstants from "$shared/constants/meta"
+import siteConstants from "$shared/constants/site"
+import viewportConstants from "$shared/constants/viewport"
+import { PageLayout } from "$shared/layouts/page"
+import { Analytics } from "$widgets/analytics"
+import { Burger } from "$widgets/burger"
+import { Footer } from "$widgets/footer"
+import { Header } from "$widgets/header"
 
-export const metadata: Metadata = metaConstants;
+export const metadata: Metadata = metaConstants
 
-export const viewport: Viewport = viewportConstants;
+export const viewport: Viewport = viewportConstants
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -44,5 +44,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </body>
       <Analytics />
     </html>
-  );
+  )
 }
