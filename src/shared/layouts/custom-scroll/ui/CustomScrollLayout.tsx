@@ -4,6 +4,9 @@ import type { CSSProperties, ReactNode } from "react"
 
 import clsx from "clsx"
 
+// TODO: fix styles
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import SimpleBar from "simplebar-react"
 
 type CustomScrollLayoutProps = {
