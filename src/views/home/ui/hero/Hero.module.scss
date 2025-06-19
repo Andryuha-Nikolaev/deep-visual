@@ -22,7 +22,7 @@
   min-height: calc(100svh - convert.to-rem(var(--header-height-number)));
   padding: convert.to-rem(70) 0;
 
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
 
   @include mixins.flex-center;
 }
