@@ -1,11 +1,20 @@
 @use "$styles/functions/convert";
+@use "$styles/mixins/breakpoints";
 
 .block {
-	flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .wrap {
-	font-weight: 600;
-	font-size: convert.to-rem(30);
-	text-decoration: none;
+  display: block;
+  width: convert.to-rem(46);
+
+  @include breakpoints.lg {
+    width: convert.to-rem(60);
+  }
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
 }

@@ -7,7 +7,7 @@
   font-weight: 400;
   font-size: convert.to-rem(50);
   line-height: 1.2;
-  font-family: var(--secondary-font), sans-serif;
+  font-family: var(--secondary-font);
 
   @include breakpoints.sm {
     font-size: convert.to-rem(70);
@@ -26,7 +26,7 @@
   font-weight: 400;
   font-size: convert.to-rem(28);
   line-height: 1.2;
-  font-family: var(--secondary-font), sans-serif;
+  font-family: var(--secondary-font);
 
   @include breakpoints.lg {
     font-size: convert.to-rem(36);
