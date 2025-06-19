@@ -1,0 +1,11 @@
+@use "$styles/functions/convert";
+
+.block {
+	flex-shrink: 0;
+}
+
+.wrap {
+	font-weight: 600;
+	font-size: convert.to-rem(30);
+	text-decoration: none;
+}
