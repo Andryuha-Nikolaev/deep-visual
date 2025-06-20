@@ -4,19 +4,19 @@ import { useSiteState } from "$shared/context/site"
 
 import s from "./BurgerSwitch.module.scss"
 
-import { BurgerButton } from "../../../buttons/burger"
-import { CloseButton } from "../../../buttons/close"
+import { BurgerIcon } from "./icons/BurgerIcon"
+import { CloseIcon } from "./icons/CloseIcon"
 
 export const BurgerSwitch = () => {
   const { isOpenBurger, switchBurger } = useSiteState()
 
   return (
-    <div className={s.block}>
-      {isOpenBurger ? (
-        <CloseButton className={s.close} onClick={switchBurger} />
-      ) : (
-        <BurgerButton onClick={switchBurger} />
-      )}
-    </div>
+    <button
+      onClick={switchBurger}
+      className={s.button}
+      aria-label={isOpenBurger ? "Закрыть меню" : "Открыть меню"}
+    >
+      {isOpenBurger ? <BurgerIcon /> : <CloseIcon />}
+    </button>
   )
 }
