@@ -6,10 +6,8 @@
   height: 100%;
   @include mixins.flex-center;
 
-  @include mixins.hover-opacity;
-
   svg {
-    width: 100%;
+    width: convert.to-rem(36);
     height: auto;
   }
 }

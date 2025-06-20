@@ -1,20 +1,35 @@
 @use "$styles/functions/convert";
 @use "$styles/mixins/breakpoints";
 @use "$styles/mixins/mixins";
+@use "$styles/mixins/button";
+@use "$styles/mixins/interaction";
 
 .block {
   flex-shrink: 0;
 }
 
-.wrap {
+.link {
   display: block;
   width: convert.to-rem(44);
+
+  border-radius: convert.to-rem(10);
+  overflow: hidden;
+
+  @include button.button-1;
+
+  color: var(--color-bg-button-1);
+
+  @include interaction.hover {
+    color: var(--color-bg-button-1-hover);
+  }
+
+  @include interaction.active {
+    color: var(--color-bg-button-1-active);
+  }
 
   @include breakpoints.lg {
     width: convert.to-rem(60);
   }
-
-  @include mixins.hover-opacity;
 
   svg {
     width: 100%;

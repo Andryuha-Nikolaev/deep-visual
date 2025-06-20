@@ -1,13 +1,18 @@
 @use "$styles/functions/convert";
-@use "$styles/mixins/mixins";
+@use "$styles/mixins/button";
 
 .block {
   width: convert.to-rem(40);
   height: convert.to-rem(40);
-  @include mixins.flex-center;
+
+  border-radius: convert.to-rem(10);
+  @include button.button-1;
 }
 
 .close {
-  width: convert.to-rem(30) !important;
-  height: convert.to-rem(30) !important;
+  opacity: 1 !important;
+
+  svg {
+    width: convert.to-rem(30) !important;
+  }
 }

@@ -12,7 +12,7 @@
   width: convert.to-rem(40);
   height: convert.to-rem(40);
   flex-shrink: 0;
-  border-radius: 50%;
+  border-radius: convert.to-rem(10);
 
   @include mixins.flex-center;
 

@@ -6,9 +6,8 @@ export const DeepVisualLogo = () => {
       height="100"
       fill="none"
       viewBox="0 0 100 100"
-      style={{ borderRadius: 10, overflow: "hidden", border: "1px solid #fff" }}
     >
-      <path fill="#232323" d="M0 0h100v100H0z"></path>
+      <path fill="currentColor" d="M0 0h100v100H0z"></path>
       <path
         fill="#fff"
         d="M36.5 29q5.65 0 8.55 2.95Q48 34.85 48 40.5v12q0 5.65-2.95 8.6-2.9 2.9-8.55 2.9H17V29zM39 40.5q0-4.5-4.5-4.5H26v21h8.5q4.5 0 4.5-4.5zm27.76 13 8.5-24.5h9.75L71.76 64h-10L48.51 29h9.75z"

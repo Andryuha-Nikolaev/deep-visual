@@ -11,7 +11,7 @@ const HeaderLogo = () => {
       <Link
         aria-label={routesConstants.HOME.name}
         href={routesConstants.HOME.url}
-        className={s.wrap}
+        className={s.link}
       >
         <DeepVisualLogo />
       </Link>
