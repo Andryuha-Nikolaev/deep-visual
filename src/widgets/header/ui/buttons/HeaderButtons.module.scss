@@ -1,0 +1,14 @@
+@use "$styles/functions/convert";
+@use "$styles/mixins/breakpoints";
+
+.block {
+  display: flex;
+  align-items: center;
+  gap: convert.to-rem(10);
+}
+
+.burger {
+  @include breakpoints.lg {
+    display: none;
+  }
+}

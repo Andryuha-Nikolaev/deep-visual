@@ -1,0 +1,19 @@
+@use "$styles/functions/convert";
+@use "$styles/mixins/button";
+@use "$styles/mixins/mixins";
+
+.button {
+  width: convert.to-rem(40);
+  height: convert.to-rem(40);
+
+  border-radius: convert.to-rem(10);
+
+  @include mixins.flex-center;
+
+  @include button.button-1;
+
+  svg {
+    width: convert.to-rem(30);
+    height: auto;
+  }
+}

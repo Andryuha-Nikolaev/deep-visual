@@ -1,0 +1,20 @@
+@use "$styles/functions/convert";
+
+.header {
+  width: 100%;
+  z-index: var(--z-index-header);
+  background-color: var(--background);
+
+  &_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+.block {
+  min-height: convert.to-rem(var(--header-height-number));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

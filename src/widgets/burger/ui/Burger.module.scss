@@ -1,0 +1,36 @@
+@use "$styles/functions/convert";
+@use "$styles/mixins/transition";
+@use "$styles/mixins/mixins";
+
+.block {
+  z-index: var(--z-index-burger);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transform: translateX(100%);
+  @include transition.create(transform);
+
+  &.open {
+    transform: translateX(0);
+  }
+}
+
+.wrapper {
+  position: absolute;
+  top: convert.to-rem(calc(var(--header-height-number)));
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.scrollbar {
+  max-height: 100%;
+  width: 100%;
+}
+
+.content {
+  padding: convert.to-rem(90) 0;
+}
