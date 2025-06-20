@@ -30,7 +30,6 @@
   --color-black-medium: #101010;
   --color-black-dark: #000000;
   --color-black-opacity-50: rgba(33, 33, 33, 0.5);
-  --color-black-opacity-70: rgba(33, 33, 33, 0.7);
 
   --color-gray-light: #f3f3f3;
   --color-gray-medium: #e0e0e0;
@@ -47,7 +46,7 @@
   --foreground: var(--color-black-medium);
 
   // overlay colors
-  --color-bg-overlay: var(--color-black-opacity-70);
+  --color-bg-overlay: var(--color-black-opacity-50);
 
   // alert colors
   --color-alert: var(--color-red-medium);
