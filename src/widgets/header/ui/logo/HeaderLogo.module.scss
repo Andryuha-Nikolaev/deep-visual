@@ -7,7 +7,7 @@
 
 .wrap {
   display: block;
-  width: convert.to-rem(46);
+  width: convert.to-rem(44);
 
   @include breakpoints.lg {
     width: convert.to-rem(60);
