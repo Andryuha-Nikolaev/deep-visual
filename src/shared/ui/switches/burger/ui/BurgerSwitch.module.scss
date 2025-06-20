@@ -2,7 +2,12 @@
 @use "$styles/mixins/mixins";
 
 .block {
-	width: convert.to-rem(24);
-	height: convert.to-rem(24);
-	@include mixins.flex-center;
+  width: convert.to-rem(40);
+  height: convert.to-rem(40);
+  @include mixins.flex-center;
+}
+
+.close {
+  width: convert.to-rem(30) !important;
+  height: convert.to-rem(30) !important;
 }

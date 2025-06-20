@@ -1,5 +1,6 @@
 @use "$styles/functions/convert";
 @use "$styles/mixins/breakpoints";
+@use "$styles/mixins/mixins";
 
 .block {
   flex-shrink: 0;
@@ -12,6 +13,8 @@
   @include breakpoints.lg {
     width: convert.to-rem(60);
   }
+
+  @include mixins.hover-opacity;
 
   svg {
     width: 100%;

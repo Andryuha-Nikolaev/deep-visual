@@ -17,4 +17,9 @@
   @include mixins.flex-center;
 
   @include button.button-1;
+
+  svg {
+    width: convert.to-rem(18);
+    height: auto;
+  }
 }
