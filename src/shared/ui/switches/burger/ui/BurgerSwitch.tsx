@@ -16,7 +16,7 @@ export const BurgerSwitch = () => {
       className={s.button}
       aria-label={isOpenBurger ? "Закрыть меню" : "Открыть меню"}
     >
-      {isOpenBurger ? <BurgerIcon /> : <CloseIcon />}
+      {isOpenBurger ? <CloseIcon /> : <BurgerIcon />}
     </button>
   )
 }
