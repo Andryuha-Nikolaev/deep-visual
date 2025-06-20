@@ -1,0 +1,20 @@
+@use "$styles/functions/convert";
+@use "$styles/mixins/mixins";
+@use "$styles/mixins/button";
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: convert.to-rem(5);
+}
+
+.link {
+  width: convert.to-rem(40);
+  height: convert.to-rem(40);
+  flex-shrink: 0;
+  border-radius: 50%;
+
+  @include mixins.flex-center;
+
+  @include button.button-1;
+}

@@ -1,10 +1,6 @@
 @use "$styles/functions/convert";
 @use "$styles/mixins/typography";
 
-.nav {
-  display: block;
-}
-
 .list {
   display: flex;
   flex-direction: column;
