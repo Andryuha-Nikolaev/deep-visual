@@ -1,0 +1,23 @@
+@use "$styles/functions/convert";
+@use "$styles/mixins/typography";
+
+.nav {
+  display: block;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: convert.to-rem(10);
+  list-style: none;
+  padding: 0;
+  text-align: center;
+
+  li {
+    @include typography.h2;
+
+    a {
+      text-decoration: none !important;
+    }
+  }
+}
