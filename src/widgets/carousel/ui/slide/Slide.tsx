@@ -1,4 +1,7 @@
+import Image from "next/image";
 import s from "./Slide.module.scss";
+
+import parse from "html-react-parser";
 
 type SlideProps = {
   id: number;
@@ -8,10 +11,17 @@ type SlideProps = {
   alt: string;
 };
 
-export const Slide = ({ id }: SlideProps) => {
+export const Slide = ({ title, text, image, alt }: SlideProps) => {
   return (
-    <div className={s.slide} style={{ backgroundColor: id % 2 ? "#608dff" : "#496dcb" }}>
-      id: {id}
+    <div className={s.slide}>
+      <Image src={image} alt={alt} fill quality={90} sizes="828px" />
+      <div className={s.heading}>
+        <h3 className={s.title}>{title}</h3>
+      </div>
+
+      <div className={s.footer}>
+        <p>{parse(text)}</p>
+      </div>
     </div>
   );
 };

@@ -2,7 +2,6 @@
 
 import { ReactNode, useRef } from "react";
 
-import { Pagination } from "swiper/modules";
 import { Swiper, type SwiperRef } from "swiper/react";
 
 import useSwiper from "$shared/hooks/swiper/useSwiper";
@@ -26,7 +25,6 @@ export const Carousel = ({ children }: CarouselProps) => {
       <Swiper
         ref={swiperRef}
         spaceBetween={20}
-        modules={[Pagination]}
         pagination={{ dynamicBullets: true }}
         grabCursor
         loop={LOOP}
@@ -34,7 +32,7 @@ export const Carousel = ({ children }: CarouselProps) => {
           576: {
             slidesPerView: 2,
           },
-          768: {
+          1024: {
             slidesPerView: 3,
           },
           1280: {

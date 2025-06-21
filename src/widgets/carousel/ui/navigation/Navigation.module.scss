@@ -2,27 +2,27 @@
 @use "$styles/mixins/breakpoints";
 
 .navigation {
-	visibility: hidden;
-	opacity: 0;
+  visibility: hidden;
+  opacity: 0;
 
-	&.visible {
-		visibility: visible;
-		opacity: 1;
-	}
+  &.visible {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .prev,
 .next {
-	z-index: 1;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .prev {
-	left: convert.to-rem(20);
+  left: convert.to-rem(0);
 }
 
 .next {
-	right: convert.to-rem(20);
+  right: convert.to-rem(0);
 }

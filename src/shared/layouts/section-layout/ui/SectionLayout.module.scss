@@ -2,10 +2,10 @@
 @use "$styles/functions/convert";
 
 .block {
-  padding: convert.to-rem(50) 0;
+  padding-top: convert.to-rem(50);
 
   @include breakpoints.md {
-    padding: convert.to-rem(70) 0;
+    padding-top: convert.to-rem(70);
   }
 }
 
