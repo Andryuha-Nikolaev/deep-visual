@@ -5,17 +5,17 @@
 @use "$styles/mixins/button";
 
 .button {
-	width: convert.to-rem(42);
-	height: convert.to-rem(42);
-	border-radius: 50%;
+  width: convert.to-rem(42);
+  height: convert.to-rem(42);
+  border-radius: 50%;
 
-	@include transition.create(background-color, color, border-color);
+  @include transition.create(background-color, color, border-color);
 
-	@include mixins.flex-center;
+  @include mixins.flex-center;
 
-	@include button.button-1;
+  @include button.button-1;
 
-	&.next {
-		transform: rotate(180deg);
-	}
+  &.next {
+    transform: rotate(180deg);
+  }
 }

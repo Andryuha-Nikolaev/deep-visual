@@ -11,7 +11,7 @@ export const menu: MenuItemType[] = [
     url: `/#${SectionId.SERVICES}`,
   },
   {
-    name: "Галерея",
+    name: "Наши работы",
     url: `/#${SectionId.GALLERY}`,
   },
   {

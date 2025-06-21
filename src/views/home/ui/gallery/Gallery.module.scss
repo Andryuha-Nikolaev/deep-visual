@@ -1,0 +1,31 @@
+@use "$styles/mixins/breakpoints";
+
+@use "$styles/functions/convert";
+
+.list {
+  display: grid;
+
+  column-gap: convert.to-rem(20);
+  row-gap: convert.to-rem(30);
+
+  @include breakpoints.sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include breakpoints.md {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include breakpoints.lg {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.item {
+  min-width: 0;
+}
