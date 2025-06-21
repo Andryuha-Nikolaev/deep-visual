@@ -18,7 +18,7 @@
 @mixin button-1 {
   background-color: var(--color-bg-button-1);
   color: var(--color-fg-button-1);
-  border: 1px solid var(--color-fg-button-1);
+  border: 1px solid var(--color-bg-button-1);
 
   @include interaction.hover {
     background-color: var(--color-bg-button-1-hover);
