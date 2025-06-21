@@ -7,6 +7,8 @@ import { primaryFont, secondaryFont } from "./fonts";
 import { Providers } from "./providers";
 
 import "simplebar-react/dist/simplebar.min.css";
+import "swiper/css";
+import "swiper/css/pagination";
 
 import Script from "next/script";
 

@@ -5,3 +5,8 @@ export type ServicesItemType = {
   image: string;
   alt: string;
 };
+
+export type ServicesDataType = {
+  title: string;
+  data: ServicesItemType[];
+};
