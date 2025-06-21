@@ -14,7 +14,7 @@ type SlideProps = {
 export const Slide = ({ title, text, image, alt }: SlideProps) => {
   return (
     <div className={s.slide}>
-      <Image src={image} alt={alt} fill quality={90} sizes="828px" />
+      <Image src={image} alt={alt} fill quality={85} sizes="828px" />
       <div className={s.heading}>
         <h3 className={s.title}>{title}</h3>
       </div>
