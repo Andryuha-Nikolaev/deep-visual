@@ -8,13 +8,11 @@ const Hero = () => {
       <div className={s.wrap}>
         <ContentLayout>
           <div className={s.content}>
-            <p className={s.subtitle}>Превращаем Ваши идеи в&nbsp;реальность</p>
+            <p className={s.subtitle}>Профессиональный визуальный контент</p>
             <h1 className={s.title}>
-              DeepVisual <span>- нейрофотосессии, нейроконтент</span>
+              DeepVisual <span>- нейрофотосессии на заказ, нейроконтент</span>
             </h1>
-            <p className={s.subtitle}>
-              Создаем профессиональный визуальный контент с&nbsp;помощью передовых нейросетей
-            </p>
+            <p className={s.subtitle}>Реалистичные нейрофото, уникальные AI-иллюстрации</p>
           </div>
         </ContentLayout>
       </div>
