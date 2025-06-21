@@ -1,6 +1,6 @@
-import type { Metadata } from "next"
+import type { Metadata } from "next";
 
-const SITE_NAME = "DeepVisual: Нейрофотосессия на заказ за 24 часа"
+const SITE_NAME = "DeepVisual: Нейрофотосессия на заказ за 24 часа";
 
 const metaConstants: Metadata = {
   title: {
@@ -54,6 +54,6 @@ const metaConstants: Metadata = {
   openGraph: {
     images: `${process.env["NEXT_PUBLIC_SITE_URL"]}/og-image.jpg`,
   },
-}
+};
 
-export default metaConstants
+export default metaConstants;

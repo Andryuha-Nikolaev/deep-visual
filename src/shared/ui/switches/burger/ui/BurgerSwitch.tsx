@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { useSiteState } from "$shared/context/site"
+import { useSiteState } from "$shared/context/site";
 
-import s from "./BurgerSwitch.module.scss"
+import s from "./BurgerSwitch.module.scss";
 
-import { BurgerIcon } from "./icons/BurgerIcon"
-import { CloseIcon } from "./icons/CloseIcon"
+import { BurgerIcon } from "./icons/BurgerIcon";
+import { CloseIcon } from "./icons/CloseIcon";
 
 export const BurgerSwitch = () => {
-  const { isOpenBurger, switchBurger } = useSiteState()
+  const { isOpenBurger, switchBurger } = useSiteState();
 
   return (
     <button
@@ -18,5 +18,5 @@ export const BurgerSwitch = () => {
     >
       {isOpenBurger ? <CloseIcon /> : <BurgerIcon />}
     </button>
-  )
-}
+  );
+};

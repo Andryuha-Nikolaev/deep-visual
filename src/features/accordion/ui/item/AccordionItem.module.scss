@@ -5,59 +5,59 @@
 @use "$styles/mixins/typography";
 
 .block {
-	border-top: 1px solid var(--color-accordion-border);
+  border-top: 1px solid var(--color-accordion-border);
 
-	&:last-child {
-		border-bottom: 1px solid var(--color-accordion-border);
-	}
+  &:last-child {
+    border-bottom: 1px solid var(--color-accordion-border);
+  }
 }
 
 .question {
-	padding: convert.to-rem(20) 0;
-	width: 100%;
-	text-align: left;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: convert.to-rem(20);
+  padding: convert.to-rem(20) 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: convert.to-rem(20);
 
-	@include transition.create(color);
+  @include transition.create(color);
 
-	@include interaction.hover {
-		color: var(--color-fg-accordion-hover);
-	}
+  @include interaction.hover {
+    color: var(--color-fg-accordion-hover);
+  }
 
-	@include interaction.active {
-		color: var(--color-fg-accordion-active);
-	}
+  @include interaction.active {
+    color: var(--color-fg-accordion-active);
+  }
 
-	&.active {
-		color: var(--color-fg-accordion-active);
-	}
+  &.active {
+    color: var(--color-fg-accordion-active);
+  }
 }
 
 .qText {
-	@include typography.h4;
+  @include typography.h4;
 }
 
 .icon {
-	display: flex;
-	flex-shrink: 0;
+  display: flex;
+  flex-shrink: 0;
 
-	@include transition.create(transform);
+  @include transition.create(transform);
 
-	&.active {
-		transform: rotate(-45deg);
-	}
+  &.active {
+    transform: rotate(-45deg);
+  }
 }
 
 .answer {
-	overflow: hidden;
+  overflow: hidden;
 
-	@include transition.create(margin, height);
-	@include typography.main-text;
+  @include transition.create(margin, height);
+  @include typography.main-text;
 }
 
 .content {
-	padding-bottom: 20px;
+  padding-bottom: 20px;
 }

@@ -1,5 +1,5 @@
 export type ErrorPageProps = {
-	code?: number;
-	title: string;
-	subtitle: string;
+  code?: number;
+  title: string;
+  subtitle: string;
 };

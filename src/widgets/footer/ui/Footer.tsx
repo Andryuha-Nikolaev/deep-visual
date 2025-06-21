@@ -1,7 +1,7 @@
-import { SectionId } from "$shared/constants/sectionId"
-import { ContentLayout } from "$shared/layouts/content-layout"
+import { SectionId } from "$shared/constants/sectionId";
+import { ContentLayout } from "$shared/layouts/content-layout";
 
-import s from "./Footer.module.scss"
+import s from "./Footer.module.scss";
 
 export const Footer = () => {
   return (
@@ -10,5 +10,5 @@ export const Footer = () => {
         <div className={s.wrap}>FOOTER</div>
       </ContentLayout>
     </footer>
-  )
-}
+  );
+};

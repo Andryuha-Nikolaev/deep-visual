@@ -1,19 +1,19 @@
-"use client"
+"use client";
 
-import type { CSSProperties, ReactNode } from "react"
+import type { CSSProperties, ReactNode } from "react";
 
-import clsx from "clsx"
+import clsx from "clsx";
 
 // TODO: fix styles
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import SimpleBar from "simplebar-react"
+import SimpleBar from "simplebar-react";
 
 type CustomScrollLayoutProps = {
-  children: ReactNode
-  className?: string
-  style?: CSSProperties
-}
+  children: ReactNode;
+  className?: string;
+  style?: CSSProperties;
+};
 
 export const CustomScrollLayout = ({ children, className, style }: CustomScrollLayoutProps) => {
   return (
@@ -24,5 +24,5 @@ export const CustomScrollLayout = ({ children, className, style }: CustomScrollL
     >
       {children}
     </SimpleBar>
-  )
-}
+  );
+};

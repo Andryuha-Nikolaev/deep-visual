@@ -1,6 +1,6 @@
 export type SiteStateType = {
-	isOpenBurger: boolean;
-	isBurgerViewed: boolean;
-	switchBurger: () => void;
-	closeBurger: () => void;
+  isOpenBurger: boolean;
+  isBurgerViewed: boolean;
+  switchBurger: () => void;
+  closeBurger: () => void;
 };

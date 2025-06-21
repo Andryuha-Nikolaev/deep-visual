@@ -1,6 +1,6 @@
-import { ContentLayout } from "$shared/layouts/content-layout"
+import { ContentLayout } from "$shared/layouts/content-layout";
 
-import s from "./Hero.module.scss"
+import s from "./Hero.module.scss";
 
 const Hero = () => {
   return (
@@ -10,14 +10,14 @@ const Hero = () => {
           <div className={s.content}>
             <p className={s.subtitle}>Профессиональный визуальный контент</p>
             <h1 className={s.title}>
-              DeepVisual <span>- нейрофотосессии на заказ, нейроконтент</span>
+              DeepVisual <span>- нейрофотосессии, нейроконтент, нейрокреатор</span>
             </h1>
             <p className={s.subtitle}>Реалистичные нейрофото, уникальные AI-иллюстрации</p>
           </div>
         </ContentLayout>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

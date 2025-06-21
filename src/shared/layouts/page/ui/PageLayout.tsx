@@ -7,15 +7,11 @@ import siteConstants from "$shared/constants/site";
 import s from "./PageLayout.module.scss";
 
 type PageLayoutProps = {
-	children: React.ReactNode;
+  children: React.ReactNode;
 };
 
 export const PageLayout = ({ children }: PageLayoutProps) => {
-	return (
-		<div
-			className={clsx(s.block, siteConstants.IS_FIXED_HEADER && s.fixedHeader)}
-		>
-			{children}
-		</div>
-	);
+  return (
+    <div className={clsx(s.block, siteConstants.IS_FIXED_HEADER && s.fixedHeader)}>{children}</div>
+  );
 };

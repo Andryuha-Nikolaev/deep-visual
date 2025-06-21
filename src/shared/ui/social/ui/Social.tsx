@@ -1,12 +1,12 @@
-import TgIcon from "./icons/tg-icon/TgIcon"
-import s from "./Social.module.scss"
+import TgIcon from "./icons/tg-icon/TgIcon";
+import s from "./Social.module.scss";
 
-import type { SocialArrayItem } from "../model/types"
+import type { SocialArrayItem } from "../model/types";
 
 const socialArray: SocialArrayItem[] = [
   { name: "tg", url: "https://t.me/andryuha_nikolaev", Icon: TgIcon },
   // { name: "vk", url: "https://vk.com/", Icon: VkIcon },
-]
+];
 
 export const Social = () => {
   return (
@@ -24,5 +24,5 @@ export const Social = () => {
         </a>
       ))}
     </div>
-  )
-}
+  );
+};

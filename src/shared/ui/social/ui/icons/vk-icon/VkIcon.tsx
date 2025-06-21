@@ -8,7 +8,7 @@ const VkIcon = () => {
         clipRule="evenodd"
       ></path>
     </svg>
-  )
-}
+  );
+};
 
-export default VkIcon
+export default VkIcon;

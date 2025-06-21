@@ -1,13 +1,13 @@
 @use "$styles/functions/convert";
 
 .block {
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
-	width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
 
-	&.fixedHeader {
-		padding-top: convert.to-rem(var(--header-height-number));
-	}
+  &.fixedHeader {
+    padding-top: convert.to-rem(var(--header-height-number));
+  }
 }

@@ -1,9 +1,9 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import routesConstants from "$shared/constants/routes"
+import routesConstants from "$shared/constants/routes";
 
-import s from "./HeaderLogo.module.scss"
-import { DeepVisualLogo } from "$widgets/header/ui/logo/DeepVisualLogo"
+import s from "./HeaderLogo.module.scss";
+import { DeepVisualLogo } from "$widgets/header/ui/logo/DeepVisualLogo";
 
 const HeaderLogo = () => {
   return (
@@ -16,7 +16,7 @@ const HeaderLogo = () => {
         <DeepVisualLogo />
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default HeaderLogo
+export default HeaderLogo;

@@ -3,9 +3,9 @@
 import YandexMetrika from "./yandex-metrika/YandexMetrika";
 
 export const Analytics = () => {
-	return (
-		<>
-			<YandexMetrika />
-		</>
-	);
+  return (
+    <>
+      <YandexMetrika />
+    </>
+  );
 };

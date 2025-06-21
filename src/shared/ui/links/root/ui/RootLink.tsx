@@ -8,23 +8,23 @@ import s from "./RootLink.module.scss";
 import type { RootLinkProps } from "../model/types";
 
 export const RootLink = <C extends React.ElementType = typeof Link>({
-	as,
-	children,
-	href,
-	className,
-	colorVariant = "var1",
-	...restProps
+  as,
+  children,
+  href,
+  className,
+  colorVariant = "var1",
+  ...restProps
 }: RootLinkProps<C>) => {
-	const Component = as || Link;
+  const Component = as || Link;
 
-	return (
-		<Component
-			className={clsx(s.link, s[colorVariant], className && className)}
-			href={href}
-			{...(as === "a" && { target: "_blank", rel: "noreferrer" })}
-			{...restProps}
-		>
-			{children}
-		</Component>
-	);
+  return (
+    <Component
+      className={clsx(s.link, s[colorVariant], className && className)}
+      href={href}
+      {...(as === "a" && { target: "_blank", rel: "noreferrer" })}
+      {...restProps}
+    >
+      {children}
+    </Component>
+  );
 };
