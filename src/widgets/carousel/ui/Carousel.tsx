@@ -8,14 +8,18 @@ import useSwiper from "$shared/hooks/swiper/useSwiper";
 
 import s from "./Carousel.module.scss";
 import { Navigation } from "./navigation/Navigation";
+import { SwiperOptions } from "swiper/types";
+import { galleryCarouselConfig, rootCarouselConfig } from "./config/config";
 
 const LOOP = true;
 
 type CarouselProps = {
   children: ReactNode;
+  swiperOptions?: SwiperOptions;
+  variant?: "root" | "gallery";
 };
 
-export const Carousel = ({ children }: CarouselProps) => {
+export const Carousel = ({ children, swiperOptions, variant = "root" }: CarouselProps) => {
   const swiperRef = useRef<SwiperRef>(null);
 
   const { isNavigationVisible, onPrev, onNext, isFirstSlide, isLastSlide } = useSwiper(swiperRef);
@@ -25,20 +29,10 @@ export const Carousel = ({ children }: CarouselProps) => {
       <Swiper
         ref={swiperRef}
         spaceBetween={20}
-        pagination={{ dynamicBullets: true }}
         grabCursor
-        loop={LOOP}
-        breakpoints={{
-          576: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-          1280: {
-            slidesPerView: 4,
-          },
-        }}
+        {...(variant === "root" && rootCarouselConfig)}
+        {...(variant === "gallery" && galleryCarouselConfig)}
+        {...swiperOptions}
       >
         {children}
       </Swiper>
