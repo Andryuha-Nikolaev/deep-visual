@@ -21,6 +21,7 @@
   position: absolute;
   right: convert.to-rem(20);
   top: convert.to-rem(20);
+  z-index: 2;
 }
 
 .content {

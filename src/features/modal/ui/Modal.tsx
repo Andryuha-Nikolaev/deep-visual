@@ -53,40 +53,58 @@ const Modal = () => {
     [ModalId.GALLERY]: <GalleryModal />,
   };
 
+  const modalsWithoutOverlay = [ModalId.GALLERY];
+
+  const withWrapper = !modalsWithoutOverlay.includes(modalId);
+
+  const disableOverlayClick = modalConfig.disableOverlayClick || !withWrapper;
+
   return (
     <Overlay
       onMouseDown={() => {
-        if (!modalConfig.disableOverlayClick) {
+        if (!disableOverlayClick) {
           hideModal();
         }
       }}
       isShown={isShown}
     >
-      <div
-        onMouseDown={(e) => e.stopPropagation()}
-        onClick={(e) => {
-          if (e.target instanceof Element) {
-            {
-              const link = e.target.closest("a");
-              if (link && link?.target !== "_blank") {
-                hideModal();
+      {!withWrapper && (
+        <>
+          {!modalConfig.hiddenCloseButton && (
+            <div className={s.close}>
+              <CloseButton onClick={hideModal} />
+            </div>
+          )}
+          {modalComponents[modalId]}
+        </>
+      )}
+      {withWrapper && (
+        <div
+          onMouseDown={(e) => e.stopPropagation()}
+          onClick={(e) => {
+            if (e.target instanceof Element) {
+              {
+                const link = e.target.closest("a");
+                if (link && link?.target !== "_blank") {
+                  hideModal();
+                }
               }
             }
-          }
-        }}
-        className={clsx(s.wrap, s[modalId])}
-      >
-        <CustomScrollLayout className={s.scroll}>
-          <div className={s.content}>
-            {!modalConfig.hiddenCloseButton && (
-              <div className={s.close}>
-                <CloseButton onClick={hideModal} />
-              </div>
-            )}
-            {modalComponents[modalId]}
-          </div>
-        </CustomScrollLayout>
-      </div>
+          }}
+          className={clsx(s.wrap, s[modalId])}
+        >
+          <CustomScrollLayout className={s.scroll}>
+            <div className={s.content}>
+              {!modalConfig.hiddenCloseButton && (
+                <div className={s.close}>
+                  <CloseButton onClick={hideModal} />
+                </div>
+              )}
+              {modalComponents[modalId]}
+            </div>
+          </CustomScrollLayout>
+        </div>
+      )}
     </Overlay>
   );
 };

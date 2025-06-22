@@ -30,7 +30,14 @@ export const Carousel = ({ children, swiperOptions, variant = "root" }: Carousel
 
   return (
     <div className={s.block}>
-      <Swiper ref={swiperRef} spaceBetween={20} grabCursor {...options}>
+      <Swiper
+        className={s.swiper}
+        ref={swiperRef}
+        spaceBetween={20}
+        grabCursor
+        keyboard={{ enabled: true }}
+        {...options}
+      >
         {children}
       </Swiper>
       <Navigation
