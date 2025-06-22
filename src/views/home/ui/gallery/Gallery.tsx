@@ -10,6 +10,7 @@ export const Gallery = () => {
       <div className={s.list}>
         {galleryData.data.map(({ id, image, alt }) => (
           <div className={s.item} key={id}>
+            <Image src={image} alt="" quality={90} fill className={s.bg} sizes="828px" />
             <Image
               src={image}
               alt={alt}
