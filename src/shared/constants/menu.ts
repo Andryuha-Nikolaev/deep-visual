@@ -15,6 +15,10 @@ export const menu: MenuItemType[] = [
     url: `/#${SectionId.GALLERY}`,
   },
   {
+    name: "Часто задаваемые вопросы",
+    url: `/#${SectionId.FAQ}`,
+  },
+  {
     name: "Контакты",
     url: `/#${SectionId.CONTACTS}`,
   },

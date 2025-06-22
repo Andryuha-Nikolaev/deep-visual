@@ -7,6 +7,8 @@ import { servicesData } from "./config/data";
 import { Carousel } from "$widgets/carousel/ui/Carousel";
 import { Slide } from "$widgets/carousel/ui/slide/Slide";
 import s from "./Services.module.scss";
+import { RootButton } from "$shared/ui/buttons/root";
+import { contacts } from "$shared/constants/contacts";
 
 export const Services = () => {
   return (
@@ -18,6 +20,9 @@ export const Services = () => {
           </SwiperSlide>
         ))}
       </Carousel>
+      <RootButton as="a" href={contacts.TG} colorVariant="var3" className={s.tg}>
+        Написать в Telegram
+      </RootButton>
     </SectionLayout>
   );
 };

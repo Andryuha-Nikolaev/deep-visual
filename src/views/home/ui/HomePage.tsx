@@ -1,3 +1,4 @@
+import { Faq } from "./faq/FAQ";
 import { Gallery } from "./gallery/Gallery";
 import Hero from "./hero/Hero";
 import { Services } from "./services/Services";
@@ -8,6 +9,7 @@ export const HomePage = () => {
       <Hero />
       <Services />
       <Gallery />
+      <Faq />
     </>
   );
 };

@@ -2,9 +2,10 @@ import TgIcon from "./icons/tg-icon/TgIcon";
 import s from "./Social.module.scss";
 
 import type { SocialArrayItem } from "../model/types";
+import { contacts } from "$shared/constants/contacts";
 
 const socialArray: SocialArrayItem[] = [
-  { name: "tg", url: "https://t.me/andryuha_nikolaev", Icon: TgIcon },
+  { name: "tg", url: contacts.TG, Icon: TgIcon },
   // { name: "vk", url: "https://vk.com/", Icon: VkIcon },
 ];
 
