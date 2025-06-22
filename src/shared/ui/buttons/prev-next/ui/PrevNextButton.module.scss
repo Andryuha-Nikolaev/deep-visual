@@ -15,6 +15,11 @@
 
   @include button.button-1;
 
+  @include interaction.disabled {
+    visibility: hidden;
+    opacity: 0;
+  }
+
   &.next {
     transform: rotate(180deg);
   }

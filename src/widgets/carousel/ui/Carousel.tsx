@@ -11,8 +11,6 @@ import { Navigation } from "./navigation/Navigation";
 import { SwiperOptions } from "swiper/types";
 import { galleryCarouselConfig, rootCarouselConfig } from "./config/config";
 
-const LOOP = true;
-
 type CarouselProps = {
   children: ReactNode;
   swiperOptions?: SwiperOptions;
@@ -24,16 +22,15 @@ export const Carousel = ({ children, swiperOptions, variant = "root" }: Carousel
 
   const { isNavigationVisible, onPrev, onNext, isFirstSlide, isLastSlide } = useSwiper(swiperRef);
 
+  const options: SwiperOptions = {
+    ...(variant === "root" && rootCarouselConfig),
+    ...(variant === "gallery" && galleryCarouselConfig),
+    ...swiperOptions,
+  };
+
   return (
     <div className={s.block}>
-      <Swiper
-        ref={swiperRef}
-        spaceBetween={20}
-        grabCursor
-        {...(variant === "root" && rootCarouselConfig)}
-        {...(variant === "gallery" && galleryCarouselConfig)}
-        {...swiperOptions}
-      >
+      <Swiper ref={swiperRef} spaceBetween={20} grabCursor {...options}>
         {children}
       </Swiper>
       <Navigation
@@ -42,7 +39,7 @@ export const Carousel = ({ children, swiperOptions, variant = "root" }: Carousel
         isVisible={isNavigationVisible}
         isFirstSlide={isFirstSlide}
         isLastSlide={isLastSlide}
-        loop={LOOP}
+        loop={!!options.loop}
       />
     </div>
   );
