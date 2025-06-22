@@ -1,7 +1,7 @@
-import { JSX } from "react"
+import { JSX } from "react";
 
 export type SocialArrayItem = {
-  name: string
-  url: string
-  Icon: () => JSX.Element
-}
+  name: string;
+  url: string;
+  Icon: () => JSX.Element;
+};

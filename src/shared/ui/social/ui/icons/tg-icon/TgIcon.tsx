@@ -8,7 +8,7 @@ const TgIcon = () => {
         clipRule="evenodd"
       ></path>
     </svg>
-  )
-}
+  );
+};
 
-export default TgIcon
+export default TgIcon;

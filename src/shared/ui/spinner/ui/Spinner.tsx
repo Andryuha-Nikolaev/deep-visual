@@ -3,9 +3,9 @@ import clsx from "clsx";
 import s from "./Spinner.module.scss";
 
 type SpinnerProps = {
-	className?: string;
+  className?: string;
 };
 
 export const Spinner = ({ className }: SpinnerProps) => {
-	return <span className={clsx(s.spinner, className && className)} />;
+  return <span className={clsx(s.spinner, className && className)} />;
 };

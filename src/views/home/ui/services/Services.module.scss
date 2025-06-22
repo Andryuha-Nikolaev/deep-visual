@@ -1,0 +1,21 @@
+@use "$styles/mixins/breakpoints";
+@use "$styles/functions/convert";
+
+.slide {
+  @include breakpoints.sm {
+    max-width: calc((100% - 20px * 1) / 2);
+  }
+
+  @include breakpoints.md2 {
+    max-width: calc((100% - 20px * 2) / 3);
+  }
+
+  @include breakpoints.lg {
+    max-width: calc((100% - 20px * 3) / 4);
+  }
+}
+
+.tg {
+  margin-top: convert.to-rem(20);
+  margin-left: auto;
+}

@@ -1,5 +1,5 @@
 const FeedbackModal = () => {
-	return <div>FeedbackModal</div>;
+  return <div>FeedbackModal</div>;
 };
 
 export default FeedbackModal;

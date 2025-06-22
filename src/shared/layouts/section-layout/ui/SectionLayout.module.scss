@@ -1,0 +1,14 @@
+@use "$styles/mixins/breakpoints";
+@use "$styles/functions/convert";
+
+.block {
+  padding-top: convert.to-rem(50);
+
+  @include breakpoints.md {
+    padding-top: convert.to-rem(70);
+  }
+}
+
+.title {
+  margin-bottom: convert.to-rem(20);
+}

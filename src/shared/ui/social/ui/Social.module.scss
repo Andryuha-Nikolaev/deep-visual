@@ -12,11 +12,10 @@
   width: convert.to-rem(40);
   height: convert.to-rem(40);
   flex-shrink: 0;
-  border-radius: convert.to-rem(10);
 
   @include mixins.flex-center;
 
-  @include button.button-1;
+  @include button.button-3;
 
   svg {
     width: convert.to-rem(18);

@@ -1,6 +1,6 @@
-import { menu } from "$shared/constants/menu"
-import { RootLink } from "$shared/ui/links/root"
-import s from "./HeaderNavbar.module.scss"
+import { menu } from "$shared/constants/menu";
+import { RootLink } from "$shared/ui/links/root";
+import s from "./HeaderNavbar.module.scss";
 
 const HeaderNavbar = () => {
   return (
@@ -13,7 +13,7 @@ const HeaderNavbar = () => {
         ))}
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default HeaderNavbar
+export default HeaderNavbar;

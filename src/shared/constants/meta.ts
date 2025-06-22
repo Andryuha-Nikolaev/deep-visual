@@ -1,6 +1,6 @@
-import type { Metadata } from "next"
+import type { Metadata } from "next";
 
-const SITE_NAME = "DeepVisual - нейрофотосессии, нейроконтент"
+const SITE_NAME = "DeepVisual: Нейрофотосессия на заказ за 24 часа";
 
 const metaConstants: Metadata = {
   title: {
@@ -8,7 +8,7 @@ const metaConstants: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Реалистичные нейрофотосессии на заказ, AI-иллюстрации и контент для соцсетей от 200₽ за изображение. Превращаем ваши идеи в реальность за 24 часа!",
+    "Генерация изображений нейросетями - создаем реалистичные нейрофото, аватарки, уникальные AI-иллюстрации и контент для соцсетей. Недорого - от 200₽ за штуку.",
   // manifest: "/web.manifest.json",
   icons: {
     icon: "/favicon.ico",
@@ -54,6 +54,6 @@ const metaConstants: Metadata = {
   openGraph: {
     images: `${process.env["NEXT_PUBLIC_SITE_URL"]}/og-image.jpg`,
   },
-}
+};
 
-export default metaConstants
+export default metaConstants;

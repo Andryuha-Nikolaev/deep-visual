@@ -1,9 +1,9 @@
-import clsx from "clsx"
+import clsx from "clsx";
 
-import { BurgerSwitch } from "$shared/ui/switches/burger"
+import { BurgerSwitch } from "$shared/ui/switches/burger";
 
-import s from "./HeaderButtons.module.scss"
-import { Social } from "$shared/ui/social"
+import s from "./HeaderButtons.module.scss";
+import { Social } from "$shared/ui/social";
 
 const HeaderButtons = () => {
   return (
@@ -13,7 +13,7 @@ const HeaderButtons = () => {
         <BurgerSwitch />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeaderButtons
+export default HeaderButtons;

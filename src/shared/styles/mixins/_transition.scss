@@ -3,7 +3,7 @@
 @use "sass:list";
 
 @function -or-default($value, $default) {
-	@return if($value == null, $default, $value);
+  @return if($value == null, $default, $value);
 }
 
 /*
@@ -11,22 +11,22 @@
     to customize the transition
 */
 @mixin create($properties...) {
-	$kw: meta.keywords($properties);
+  $kw: meta.keywords($properties);
 
-	$duration: -or-default(map.get($kw, "duration"), var(--transition-duration));
-	$timing-function: -or-default(map.get($kw, "timing-function"), ease);
-	$delay: map.get($kw, "delay");
+  $duration: -or-default(map.get($kw, "duration"), var(--transition-duration));
+  $timing-function: -or-default(map.get($kw, "timing-function"), ease);
+  $delay: map.get($kw, "delay");
 
-	$base: $duration $timing-function $delay;
+  $base: $duration $timing-function $delay;
 
-	@if list.length($properties) == 0 {
-		@error "You must specify at least one property";
-	}
+  @if list.length($properties) == 0 {
+    @error "You must specify at least one property";
+  }
 
-	@if list.length($properties) == 1 {
-		transition: list.nth($properties, 1) $base;
-	} @else {
-		transition: $base;
-		transition-property: list.join($properties, (), $separator: comma);
-	}
+  @if list.length($properties) == 1 {
+    transition: list.nth($properties, 1) $base;
+  } @else {
+    transition: $base;
+    transition-property: list.join($properties, (), $separator: comma);
+  }
 }

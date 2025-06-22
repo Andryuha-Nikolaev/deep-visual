@@ -49,12 +49,11 @@
 
 .subtitle {
   margin: 0 auto;
-  max-width: convert.to-rem(430);
+  max-width: convert.to-rem(650);
   text-wrap: balance;
 
   @include typography.h4;
 
   @include breakpoints.lg {
-    max-width: convert.to-rem(650);
   }
 }

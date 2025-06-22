@@ -54,6 +54,12 @@
   }
 }
 
+@mixin large-text() {
+  font-weight: 400;
+  font-size: convert.to-rem(18);
+  line-height: 1.2;
+}
+
 @mixin main-text() {
   font-weight: 400;
   font-size: convert.to-rem(16);
@@ -79,7 +85,7 @@
 }
 
 @mixin link-1() {
-  font-weight: 400;
+  font-weight: inherit;
   text-underline-offset: convert.to-rem(2);
   width: fit-content;
   text-decoration: underline;

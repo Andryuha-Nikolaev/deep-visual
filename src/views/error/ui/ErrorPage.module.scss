@@ -1,31 +1,34 @@
 @use "$styles/functions/convert";
+@use "$styles/mixins/typography";
 
 .block {
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 
-	& > div {
-		flex-grow: 1;
-		display: flex;
-		flex-direction: column;
-	}
+  & > div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .wrap {
-	position: relative;
-	z-index: 1;
-	margin: auto;
-	text-align: center;
-	padding: convert.to-rem(60) 0;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+  text-align: center;
+  padding: convert.to-rem(60) 0;
 }
 
 .title {
-	margin: convert.to-rem(20) auto;
+  margin: convert.to-rem(20) auto;
+
+  @include typography.h2;
 }
 
 .btnWrap {
-	margin: 0 auto;
-	width: fit-content;
-	margin-top: convert.to-rem(30);
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: convert.to-rem(30);
 }

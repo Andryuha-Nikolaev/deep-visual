@@ -1,0 +1,27 @@
+@use "$styles/functions/convert";
+@use "$styles/mixins/transition";
+@use "$styles/mixins/interaction";
+@use "$styles/mixins/mixins";
+@use "$styles/mixins/button";
+
+.button {
+  width: convert.to-rem(42);
+  height: convert.to-rem(42);
+
+  @include transition.create(background-color, color, border-color);
+
+  @include mixins.flex-center;
+
+  @include button.button-1;
+
+  border-radius: 50%;
+
+  @include interaction.disabled {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &.next {
+    transform: rotate(180deg);
+  }
+}

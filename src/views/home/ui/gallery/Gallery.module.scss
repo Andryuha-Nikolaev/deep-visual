@@ -1,0 +1,46 @@
+@use "$styles/mixins/breakpoints";
+@use "$styles/functions/convert";
+@use "$styles/mixins/mixins";
+@use "$styles/mixins/transition";
+
+.list {
+  display: grid;
+
+  gap: convert.to-rem(10);
+
+  grid-template-columns: repeat(3, 1fr);
+
+  @include breakpoints.sm {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include breakpoints.md2 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @include breakpoints.lg {
+    gap: convert.to-rem(20);
+  }
+}
+
+.image {
+  border-radius: convert.to-rem(10);
+
+  object-fit: contain;
+  position: relative;
+}
+
+.item {
+  min-width: 0;
+  border-radius: convert.to-rem(10);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+
+  @include mixins.flex-center;
+}
+
+.bg {
+  filter: blur(24px);
+}

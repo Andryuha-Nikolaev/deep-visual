@@ -1,2 +1,51 @@
+@use "$styles/mixins/breakpoints";
+@use "$styles/functions/convert";
+@use "$styles/mixins/typography";
+
 .block {
+  padding: convert.to-rem(50) 0 convert.to-rem(20);
+
+  @include breakpoints.md {
+    padding: convert.to-rem(70) 0 convert.to-rem(20);
+  }
+
+  p {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.title {
+  margin-bottom: convert.to-rem(20);
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+
+  gap: convert.to-rem(20);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: convert.to-rem(10);
+
+  background-color: var(--color-bg-overlay-2);
+  padding: convert.to-rem(20);
+  border-radius: convert.to-rem(10);
+}
+
+.dev {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: convert.to-rem(20);
+  margin-left: auto;
+
+  p {
+    @include typography.additional-text;
+  }
+}
+
+.copy {
+  margin-top: convert.to-rem(20);
 }

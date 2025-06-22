@@ -1,9 +1,9 @@
-import { SectionId } from "./sectionId"
+import { SectionId } from "./sectionId";
 
 export type MenuItemType = {
-  name: string
-  url: string
-}
+  name: string;
+  url: string;
+};
 
 export const menu: MenuItemType[] = [
   {
@@ -11,11 +11,15 @@ export const menu: MenuItemType[] = [
     url: `/#${SectionId.SERVICES}`,
   },
   {
-    name: "Галерея",
+    name: "Наши работы",
     url: `/#${SectionId.GALLERY}`,
+  },
+  {
+    name: "Часто задаваемые вопросы",
+    url: `/#${SectionId.FAQ}`,
   },
   {
     name: "Контакты",
     url: `/#${SectionId.CONTACTS}`,
   },
-]
+];

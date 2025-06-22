@@ -19,6 +19,8 @@
   text-align: center;
 
   li {
+    @include typography.large-text;
+
     a {
       text-decoration: none !important;
     }

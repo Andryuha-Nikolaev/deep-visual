@@ -1,6 +1,6 @@
-import s from "./BurgerNavbar.module.scss"
-import { menu } from "$shared/constants/menu"
-import { RootLink } from "$shared/ui/links/root"
+import s from "./BurgerNavbar.module.scss";
+import { menu } from "$shared/constants/menu";
+import { RootLink } from "$shared/ui/links/root";
 
 const BurgerNavbar = () => {
   return (
@@ -13,7 +13,7 @@ const BurgerNavbar = () => {
         ))}
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default BurgerNavbar
+export default BurgerNavbar;

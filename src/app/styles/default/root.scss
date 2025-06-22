@@ -14,6 +14,7 @@
   --header-height-number: 60;
   --input-height-number: 50;
   --input-border-radius-number: 10;
+  --button-border-radius-number: 10;
 
   // z-index
   --z-index-burger: 98;
@@ -26,10 +27,11 @@
   // use these colors only in root.scss
   --color-white: #fff;
 
-  --color-black-light: #232323;
+  --color-black-light: #282828;
   --color-black-medium: #101010;
   --color-black-dark: #000000;
   --color-black-opacity-50: rgba(33, 33, 33, 0.5);
+  --color-black-opacity-90: rgba(33, 33, 33, 0.9);
 
   --color-gray-light: #f3f3f3;
   --color-gray-medium: #e0e0e0;
@@ -47,6 +49,7 @@
 
   // overlay colors
   --color-bg-overlay: var(--color-black-opacity-50);
+  --color-bg-overlay-2: var(--color-black-opacity-90);
 
   // alert colors
   --color-alert: var(--color-red-medium);
