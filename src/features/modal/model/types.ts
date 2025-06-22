@@ -9,6 +9,14 @@ export type ModalConfigProps = {
   hiddenCloseButton?: boolean;
   onHideCallback?: () => void;
   children?: React.ReactNode;
+  gallery?: {
+    initialSlide: number;
+    slides: {
+      id: number;
+      image: string;
+      alt: string;
+    }[];
+  };
 } | null;
 
 export type ModalProps = {

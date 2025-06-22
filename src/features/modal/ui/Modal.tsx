@@ -15,6 +15,7 @@ import s from "./Modal.module.scss";
 
 import { ModalId, ModalSearchParams } from "../config/constants";
 import type { ModalComponentsMap } from "../model/types";
+import { GalleryModal } from "./gallery/GalleryModal";
 
 const Modal = () => {
   const modalContext = useModal();
@@ -49,6 +50,7 @@ const Modal = () => {
   const modalComponents: ModalComponentsMap = {
     [ModalId.DEFAULT]: <DefaultModal />,
     [ModalId.FEEDBACK_FORM]: <FeedbackModal />,
+    [ModalId.GALLERY]: <GalleryModal />,
   };
 
   return (
@@ -60,7 +62,6 @@ const Modal = () => {
       }}
       isShown={isShown}
     >
-      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events */}
       <div
         onMouseDown={(e) => e.stopPropagation()}
         onClick={(e) => {
