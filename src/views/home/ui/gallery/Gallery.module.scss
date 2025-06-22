@@ -1,6 +1,7 @@
 @use "$styles/mixins/breakpoints";
 @use "$styles/functions/convert";
 @use "$styles/mixins/mixins";
+@use "$styles/mixins/transition";
 
 .list {
   display: grid;
@@ -25,10 +26,8 @@
 }
 
 .image {
-  width: 100%;
-  height: auto;
   border-radius: convert.to-rem(10);
-  aspect-ratio: 1/1;
+
   object-fit: contain;
   position: relative;
 }
@@ -39,10 +38,41 @@
   border-radius: convert.to-rem(10);
   overflow: hidden;
   position: relative;
+  aspect-ratio: 1/1;
+  cursor: pointer;
 
   @include mixins.flex-center;
 }
 
 .bg {
   filter: blur(24px);
+}
+
+.modalImageWrap {
+  inset: 0;
+  z-index: var(--z-index-modal);
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+
+  background-color: var(--color-bg-overlay);
+
+  @include mixins.flex-center;
+  @include mixins.backdrop;
+
+  @include transition.create(visibility, opacity);
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.modalImage {
+  object-fit: contain;
+  max-width: convert.to-rem(1376);
+  max-height: convert.to-rem(1264);
+  width: 100%;
+  height: 100%;
 }
