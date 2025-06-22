@@ -8,19 +8,17 @@
 
   gap: convert.to-rem(10);
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   @include breakpoints.sm {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @include breakpoints.md {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  @include breakpoints.lg {
+  @include breakpoints.md2 {
     grid-template-columns: repeat(6, 1fr);
+  }
 
+  @include breakpoints.lg {
     gap: convert.to-rem(20);
   }
 }

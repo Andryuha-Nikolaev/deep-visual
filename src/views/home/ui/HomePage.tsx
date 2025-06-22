@@ -1,4 +1,4 @@
-import { Faq } from "./faq/FAQ";
+import { Faq } from "./faq/Faq";
 import { Gallery } from "./gallery/Gallery";
 import Hero from "./hero/Hero";
 import { Services } from "./services/Services";
