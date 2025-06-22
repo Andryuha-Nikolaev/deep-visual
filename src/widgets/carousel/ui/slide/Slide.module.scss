@@ -23,8 +23,9 @@
 .heading,
 .footer {
   position: relative;
-  background-color: var(--color-bg-overlay-2);
   padding: convert.to-rem(20) convert.to-rem(10);
+
+  background-color: var(--color-bg-overlay-2);
 }
 
 .footer {
