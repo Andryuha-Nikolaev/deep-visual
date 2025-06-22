@@ -6,8 +6,7 @@
   width: calc(100% - convert.to-rem(20));
   max-width: convert.to-rem(600);
   border-radius: convert.to-rem(10);
-  max-height: calc(100vh - 20px);
-  max-height: calc(100svh - 20px);
+  max-height: calc(100% - 20px);
 
   @include breakpoints.md {
     width: 100%;

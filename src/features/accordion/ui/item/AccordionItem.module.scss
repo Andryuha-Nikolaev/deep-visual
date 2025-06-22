@@ -23,15 +23,15 @@
 
   @include transition.create(color);
 
+  &.active {
+    color: var(--color-fg-accordion-hover);
+  }
+
   @include interaction.hover {
     color: var(--color-fg-accordion-hover);
   }
 
   @include interaction.active {
-    color: var(--color-fg-accordion-active);
-  }
-
-  &.active {
     color: var(--color-fg-accordion-active);
   }
 }
@@ -56,6 +56,13 @@
 
   @include transition.create(margin, height);
   @include typography.main-text;
+
+  ol,
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: convert.to-rem(5);
+  }
 }
 
 .content {
