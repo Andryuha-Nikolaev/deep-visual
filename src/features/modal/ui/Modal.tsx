@@ -72,7 +72,7 @@ const Modal = () => {
         <>
           {!modalConfig.hiddenCloseButton && (
             <div className={s.close}>
-              <CloseButton onClick={hideModal} />
+              <CloseButton onClick={hideModal} colorVariant="var1" size="lg" />
             </div>
           )}
           {modalComponents[modalId]}

@@ -1,4 +1,4 @@
-import { Pagination } from "swiper/modules";
+import { Keyboard, Pagination } from "swiper/modules";
 import { SwiperOptions } from "swiper/types";
 
 export const rootCarouselConfig: SwiperOptions = {
@@ -17,8 +17,9 @@ export const rootCarouselConfig: SwiperOptions = {
 };
 
 export const galleryCarouselConfig: SwiperOptions = {
-  modules: [Pagination],
+  modules: [Pagination, Keyboard],
   pagination: {
     dynamicBullets: true,
   },
+  keyboard: { enabled: true },
 };
