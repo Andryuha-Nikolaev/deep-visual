@@ -39,8 +39,8 @@
 
   --color-red-medium: #ff4a4a;
 
-  --color-blue-light: #517ae0;
-  --color-blue-medium: #496dcb;
+  --color-blue-light: #426fdf;
+  --color-blue-medium: #3363dc;
   --color-blue-dark: #365193;
 
   //  base colors
@@ -98,6 +98,7 @@
   --color-link-disabled: var(--color-gray-dark);
 
   // accordion colors
+  --color-fg-accordion-changed: var(--color-blue-light);
   --color-fg-accordion-hover: var(--color-blue-medium);
   --color-fg-accordion-active: var(--color-blue-dark);
   --color-accordion-border: var(--color-blue-medium);
