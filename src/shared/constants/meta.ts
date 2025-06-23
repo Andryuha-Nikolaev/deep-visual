@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const SITE_NAME = "DeepVisual: Нейрофотосессия на заказ за 24 часа";
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "";
 
 const metaConstants: Metadata = {
   title: {
@@ -21,6 +21,11 @@ const metaConstants: Metadata = {
     },
     other: [
       {
+        url: `${baseUrl}/favicon.svg`,
+        type: "image/svg+xml",
+        rel: "icon",
+      },
+      {
         rel: "icon",
         type: "image/png",
         sizes: "32x32",
@@ -31,6 +36,12 @@ const metaConstants: Metadata = {
         type: "image/png",
         sizes: "64x64",
         url: `${baseUrl}/favicon-64x64.png`,
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "96x96",
+        url: `${baseUrl}/favicon-96x96.png`,
       },
       {
         rel: "icon",
