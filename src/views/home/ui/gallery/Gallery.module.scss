@@ -31,6 +31,8 @@
 }
 
 .item {
+  display: block;
+  width: 100%;
   min-width: 0;
   border-radius: convert.to-rem(10);
   overflow: hidden;
@@ -42,5 +44,5 @@
 }
 
 .bg {
-  filter: blur(24px);
+  filter: blur(34px);
 }

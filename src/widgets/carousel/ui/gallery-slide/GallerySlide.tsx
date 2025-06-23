@@ -7,7 +7,6 @@ type GallerySlideProps = {
 
 export const GallerySlide = ({ image }: GallerySlideProps) => {
   return (
-    // <div className={s.block}>
     <Image
       className={s.image}
       src={image}
@@ -15,8 +14,7 @@ export const GallerySlide = ({ image }: GallerySlideProps) => {
       width={1}
       height={1}
       sizes="1376px"
-      quality={100}
+      quality={90}
     />
-    // </div>
   );
 };

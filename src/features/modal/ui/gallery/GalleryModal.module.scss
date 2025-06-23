@@ -1,5 +1,6 @@
 @use "$styles/mixins/mixins";
 
 .slide {
+  display: flex !important;
   @include mixins.flex-center;
 }
