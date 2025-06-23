@@ -18,7 +18,7 @@ export const Footer = () => {
             <p>
               Telegram:{" "}
               <RootLink href={contacts.TG} as="a">
-                {contacts.TG}
+                @deep_visual
               </RootLink>
             </p>
             <p>
