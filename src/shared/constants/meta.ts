@@ -56,6 +56,7 @@ const metaConstants: Metadata = {
   },
   other: {
     "yandex-verification": "4b1296e19c33dc31",
+    "google-site-verification": "y_FkDZdsKOFoMdlGTh0ke1vuZo0LYmWHKz8Pw6XiLaE",
   },
 };
 
