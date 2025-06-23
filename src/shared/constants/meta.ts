@@ -21,6 +21,11 @@ const metaConstants: Metadata = {
     },
     other: [
       {
+        rel: "shortcut icon",
+        type: "image/x-icon",
+        url: `${baseUrl}/favicon.ico`,
+      },
+      {
         url: `${baseUrl}/favicon.svg`,
         type: "image/svg+xml",
         rel: "icon",
