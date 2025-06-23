@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 const SITE_NAME = "DeepVisual: Нейрофотосессия на заказ за 24 часа";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 const metaConstants: Metadata = {
   title: {
@@ -11,43 +12,43 @@ const metaConstants: Metadata = {
     "Генерация изображений нейросетями - создаем реалистичные нейрофото, аватарки, уникальные AI-иллюстрации и контент для соцсетей. Недорого - от 200₽ за штуку.",
   // manifest: "/web.manifest.json",
   icons: {
-    icon: "/favicon.ico",
+    icon: `${baseUrl}/favicon.ico`,
     apple: {
       rel: "apple-touch-icon",
       type: "image/png",
       sizes: "180x180",
-      url: "/apple-touch-icon.png",
+      url: `${baseUrl}/apple-touch-icon.png`,
     },
     other: [
       {
         rel: "icon",
         type: "image/png",
         sizes: "32x32",
-        url: "/favicon-32x32.png",
+        url: `${baseUrl}/favicon-32x32.png`,
       },
       {
         rel: "icon",
         type: "image/png",
         sizes: "64x64",
-        url: "/favicon-64x64.png",
+        url: `${baseUrl}/favicon-64x64.png`,
       },
       {
         rel: "icon",
         type: "image/png",
         sizes: "128x128",
-        url: "/favicon-128x128.png",
+        url: `${baseUrl}/favicon-128x128.png`,
       },
       {
         rel: "icon",
         type: "image/png",
         sizes: "192x192",
-        url: "/favicon-192x192.png",
+        url: `${baseUrl}/favicon-192x192.png`,
       },
       {
         rel: "icon",
         type: "image/png",
         sizes: "512x512",
-        url: "/favicon-512x512.png",
+        url: `${baseUrl}/favicon-512x512.png`,
       },
     ],
   },
