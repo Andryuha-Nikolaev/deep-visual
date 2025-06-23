@@ -54,6 +54,9 @@ const metaConstants: Metadata = {
   openGraph: {
     images: `${process.env["NEXT_PUBLIC_SITE_URL"]}/og-image.jpg`,
   },
+  other: {
+    "yandex-verification": "4b1296e19c33dc31",
+  },
 };
 
 export default metaConstants;
