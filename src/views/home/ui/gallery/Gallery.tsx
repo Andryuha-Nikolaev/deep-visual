@@ -26,8 +26,8 @@ export const Gallery = () => {
       <div className={s.list}>
         {galleryData.data.map(({ id, image, alt }, index) => (
           <div className={s.item} key={id} onClick={() => showGalleryModal(index)}>
-            <Image src={image} alt="" quality={100} fill className={s.bg} sizes="1376px" />
-            <Image src={image} alt={alt} fill className={s.image} quality={100} sizes="1376px" />
+            <Image src={image} alt="" quality={90} fill className={s.bg} sizes="256px" />
+            <Image src={image} alt={alt} fill className={s.image} quality={90} sizes="256px" />
           </div>
         ))}
       </div>

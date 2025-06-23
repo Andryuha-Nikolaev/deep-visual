@@ -21,7 +21,7 @@
   @include transition.create(color);
 
   &.active {
-    color: var(--color-fg-accordion-hover);
+    color: var(--color-fg-accordion-changed);
   }
 
   @include interaction.hover {
