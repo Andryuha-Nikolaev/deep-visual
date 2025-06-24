@@ -19,8 +19,6 @@ export const CloseButton = ({
   size = "auto",
   ...restProps
 }: CloseButtonProps) => {
-  console.log(colorVariant);
-
   return (
     <button
       onClick={onClick}

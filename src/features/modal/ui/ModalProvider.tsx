@@ -71,6 +71,11 @@ export const ModalProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape" && isShown) {
+        const target = e.target as HTMLElement;
+        if (target.blur) {
+          target.blur();
+        }
+
         hideModal();
       }
     };
