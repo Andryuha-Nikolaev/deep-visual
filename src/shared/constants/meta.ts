@@ -1,7 +1,9 @@
+import { getBaseUrl } from "$shared/lib/environment/getBaseUrl";
 import type { Metadata } from "next";
 
 const SITE_NAME = "DeepVisual: Нейрофотосессия на заказ за 24 часа";
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "";
+
+const baseUrl = getBaseUrl();
 
 const metaConstants: Metadata = {
   title: {
