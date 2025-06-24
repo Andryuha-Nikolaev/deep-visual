@@ -7,6 +7,10 @@ import { galleryData } from "./config/data";
 import s from "./Gallery.module.scss";
 import { useModal } from "$features/modal/ui/ModalProvider";
 import { ModalId } from "$features/modal";
+import { RootButton } from "$shared/ui/buttons/root";
+import Link from "next/link";
+import routesConstants from "$shared/constants/routes";
+import { GalleryIcon } from "./icons/GalleryIcon";
 
 export const Gallery = () => {
   const { showModal } = useModal();
@@ -22,7 +26,20 @@ export const Gallery = () => {
   };
 
   return (
-    <SectionLayout title={galleryData.title} id={SectionId.GALLERY}>
+    <SectionLayout
+      title={galleryData.title}
+      id={SectionId.GALLERY}
+      button={
+        <RootButton
+          as={Link}
+          href={routesConstants.GALLERY.url}
+          colorVariant="var3"
+          Icon={<GalleryIcon />}
+        >
+          Галерея
+        </RootButton>
+      }
+    >
       <div className={s.list}>
         {galleryData.data.map(({ id, image, alt }, index) => (
           <div className={s.item} key={id} onClick={() => showGalleryModal(index)}>

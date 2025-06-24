@@ -8,6 +8,11 @@ const routesConstants = {
     url: "/test",
     metaTitle: "Тест",
   },
+  GALLERY: {
+    name: "Галерея",
+    url: "/gallery",
+    metaTitle: "Галерея",
+  },
 };
 
 export default routesConstants;
