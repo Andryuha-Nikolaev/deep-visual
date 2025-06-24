@@ -20,14 +20,14 @@ const metaConstants: Metadata = {
     },
     other: [
       {
-        rel: "shortcut icon",
-        type: "image/x-icon",
-        url: "/favicon.ico",
-      },
-      {
         rel: "icon",
         type: "image/svg+xml",
         url: "/favicon.svg",
+      },
+      {
+        rel: "shortcut icon",
+        type: "image/x-icon",
+        url: "/favicon.ico",
       },
       {
         rel: "icon",
