@@ -6,15 +6,17 @@ type SectionLayoutProps = {
   children: React.ReactNode;
   id?: SectionId;
   title: string;
+  button?: React.ReactNode;
 };
 
-export const SectionLayout = ({ children, id, title }: SectionLayoutProps) => {
+export const SectionLayout = ({ children, id, title, button }: SectionLayoutProps) => {
   return (
     <section className={s.block} id={id}>
       <ContentLayout>
-        <h2 className={s.title}>{title}</h2>
-
-        {children}
+        <div className={s.wrap}>
+          <h2 className={s.title}>{title}</h2>
+          {children} {button && <div className={s.buttonWrap}>{button}</div>}
+        </div>
       </ContentLayout>
     </section>
   );

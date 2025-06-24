@@ -11,7 +11,15 @@ import { Carousel, Slide } from "$widgets/carousel";
 
 export const Services = () => {
   return (
-    <SectionLayout title={servicesData.title} id={SectionId.SERVICES}>
+    <SectionLayout
+      title={servicesData.title}
+      id={SectionId.SERVICES}
+      button={
+        <RootButton as="a" href={contacts.TG} colorVariant="var3">
+          Написать в Telegram
+        </RootButton>
+      }
+    >
       <Carousel>
         {servicesData.data.map((item) => (
           <SwiperSlide className={s.slide} key={item.id}>
@@ -19,9 +27,6 @@ export const Services = () => {
           </SwiperSlide>
         ))}
       </Carousel>
-      <RootButton as="a" href={contacts.TG} colorVariant="var3" className={s.tg}>
-        Написать в Telegram
-      </RootButton>
     </SectionLayout>
   );
 };

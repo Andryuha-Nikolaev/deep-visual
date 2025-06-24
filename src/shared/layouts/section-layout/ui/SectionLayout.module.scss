@@ -9,6 +9,22 @@
   }
 }
 
+.wrap {
+  position: relative;
+}
+
 .title {
   margin-bottom: convert.to-rem(20);
+}
+
+.buttonWrap {
+  margin-top: convert.to-rem(20);
+  margin-left: auto;
+
+  @include breakpoints.md {
+    margin: 0;
+    position: absolute;
+    top: calc(100% + convert.to-rem(20));
+    right: 0;
+  }
 }
