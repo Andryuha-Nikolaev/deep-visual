@@ -71,7 +71,7 @@ const metaConstants: Metadata = {
     images: `${baseUrl}/og-image.jpg`,
   },
   other: {
-    "yandex-verification": "c745a53a09958fd6",
+    "yandex-verification": "c98182920880b739",
     "google-site-verification": "6-wJRWfjc9nxvAiGINRzJxvF7-6TjFQHLzKQ0XgjSCs",
   },
 };
