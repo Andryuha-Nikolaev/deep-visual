@@ -20,14 +20,14 @@ const metaConstants: Metadata = {
     },
     other: [
       {
-        rel: "shortcut icon",
-        type: "image/x-icon",
-        url: "/favicon.ico",
-      },
-      {
         rel: "icon",
         type: "image/svg+xml",
         url: "/favicon.svg",
+      },
+      {
+        rel: "shortcut icon",
+        type: "image/x-icon",
+        url: "/favicon.ico",
       },
       {
         rel: "icon",
@@ -58,6 +58,12 @@ const metaConstants: Metadata = {
         type: "image/png",
         sizes: "192x192",
         url: "/favicon-192x192.png",
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "256x256",
+        url: "/favicon-256x256.png",
       },
       {
         rel: "icon",
