@@ -62,12 +62,6 @@ const metaConstants: Metadata = {
       {
         rel: "icon",
         type: "image/png",
-        sizes: "256x256",
-        url: "/favicon-256x256.png",
-      },
-      {
-        rel: "icon",
-        type: "image/png",
         sizes: "512x512",
         url: "/favicon-512x512.png",
       },
